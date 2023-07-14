@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Form</title>
+    <style>
+      .main-border {
+        background-color: rgb(138, 139, 193);
+        color: white;
+        border: 1px solid black;
+        padding: 5px; 
+   
+      }
+      h1{
+        text-align: center;
+        color: purple;
+        font-style: italic;
+        font-size: 30px;
+      }
+      label {
+        /* top: 20px; */
+        margin-left: 10px;
+        width: 150px;
+        display: inline-block;
+      }
+      input {
+        padding: 3px;
+        margin-left: 50px;
+      }
+     textarea{
+        padding: 3px;
+        margin-left: 50px;
+     }
+     .drawing{
+        margin-left: 20px;
+     }
+     .submit{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    }
+    button{
+        border-radius: 10px;
+        margin: 5px;
+    }
+     
+    </style>
+  </head>
+  <body>
+    <u><h1>STUDENT REGISTRATION FORM</h1></u>
+    <form class="main-border">
+      <label for="firstname">FIRST NAME </label>
+      <input type="text" id="firstname" maxlength="30" />
+      <span>(max 30 characters a-z and A-Z)</span>
+      <br />
+      <br />
+      <label for="lastname">LAST NAME </label>
+      <input type="text" id="lastname" maxlength="30" />
+      <span>(max 30 characters a-z and A-Z)</span>
+      <br>
+      <br>
+      <label for="date">DATE OF BIRTH</label>
+      <input type="date" id="date" maxlength="30" />
+      <br>
+      <br>
+      <label for="email">EMAIL</label>
+      <input type="email" id="email" maxlength="30" />
+      <br>
+      <br>
+      <label for="number">MOBILE NUMBER</label>
+      <input type="number" id="number" maxlength="30" />
+      <span>(10 digit number)</span>
+      <br>
+      <br>
+      <label for="gender">GENDER</label>
+      <input type="radio" name="gender" value="male" /> 
+      <label style="display: inline;" for="male">Male</label>
+      <input type="radio" name="gender" value="female" />
+      <label for="female">FEMALE</label>
+      <br>
+      <br>
+      <label  for="address">ADDRESS</label>
+      <textarea  id="address" cols="30" rows="5"></textarea>
+      <br>
+      <br>
+      <label  for="city">CITY</label>
+      <input type="text" id="city" />
+      <span>(max 30 characters a-z and A-Z)</span>
+      <br>
+      <br>
+      <label  for="pincode">PINCODE</label>
+      <input type="number" id="pincode" />
+      <span>(6 digit number)</span>
+      <br>
+      <br>
+      <label  for="state">STATE</label>
+      <input type="text" id="state" />
+      <span>(max 30 characters a-z and A-Z)</span>
+      <br>
+      <br>
+      <label  for="country">COUNTRY</label>
+      <input type="text" id="country" />
+      <br>
+      <br>
+      <label  for="hobbies">HOBBIES</label>
+      
+      <label class="drawing" style="width: 20px; margin-left: 10px;" for="drawing">Drawing</label>
+      <input type="checkbox"  id="hobbies">
+      <label style="width: 20px;"  for="singing">Singing</label>
+      <input type="checkbox"  id="singing">
+      <label style="width: 20px;"  for="dancing">Dancing</label>
+      <input type="checkbox"  id="dancing">
+      <label style="width: 20px;"  for="sketching">Sketching</label>
+      <input type="checkbox"  id="sketching">
+
+      <br>
+      <br>
+      <label  for="hobbies">QUALIFICATION</label>
+      <table style="display: inline;"  >
+        <tr>
+            <th colspan="2">S.NO Examination</th>
+            
+               
+           
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td> Class X</td>
+            <td><input type="text" maxlength="10"></td>
+            <td><input type="number" maxlength="2"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td> Class XII</td>
+            <td><input type="text" maxlength="10"></td>
+            <td><input type="text" maxlength="2"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td><input type="text" maxlength="10"></td>
+            <td><input type="text" maxlength="2"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Master</td>
+            <td><input type="text" maxlength="10"></td>
+            <td><input type="text" maxlength="2"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> </td>
+            <td style="text-align: center;">(10 char max)</td>
+            <td style="text-align: center;">(upto 2 decimal)</td>
+            <td></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <label  for="courses">COURSES APPLIED FOR</label>
+      
+      <label class="drawing" style="width: 0px; " for="bca">BCA</label>
+      <input type="radio"  name="course" value="bca" >
+      <label style="width: 0px;"  for="b.com">B.COM</label>
+      <input type="radio" name="course" value="b.com">
+      <label style="width: 0px;"  for="b.sc">B.SC</label>
+      <input type="radio" name="course"  value="b.sc">
+      <label style="width: 0px;"  for="b.a">B.A</label>
+      <input type="radio" name="course"  value="b.a">
+      <br>
+      <br>
+      <div class="submit">
+      <button  type="submit">Submit</button>
+      <button  type="reset">Reset</button>
+    
+    </form>
+  </body>
+</html>
